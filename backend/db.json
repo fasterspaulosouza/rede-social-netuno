@@ -2,16 +2,16 @@
   "usuarios": [
     {
       "nome": "Paulo Souza",
-      "email": "paulo@fasters.com.br",
+      "email": "paulo@email.com",
       "senha": "123456",
-      "foto": "https://i.ibb.co/jPXtstqk/perfl.png",
+      "foto": "",
       "id": 1
     },
     {
       "nome": "Larissa Emily",
-      "email": "larissa@gmail.com",
-      "senha": "157751",
-      "foto": "https://i.pinimg.com/736x/d6/1a/6a/d61a6a54e5e1d0614179796b8ee25de2.jpg",
+      "email": "larissa@email.com",
+      "senha": "123456",
+      "foto": "",
       "id": 2
     }
   ]
