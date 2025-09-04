@@ -4,15 +4,53 @@
       "nome": "Paulo Souza",
       "email": "paulo@email.com",
       "senha": "123456",
-      "foto": "",
+      "foto": "https://img.freepik.com/fotos-gratis/retrato-de-menino-branco-com-corte-de-cabelo-estiloso_74855-10319.jpg",
       "id": 1
     },
     {
       "nome": "Larissa Emily",
       "email": "larissa@email.com",
       "senha": "123456",
-      "foto": "",
+      "foto": "https://i.pinimg.com/736x/17/73/86/177386353024071c78b9e3b576cfeda5.jpg",
       "id": 2
+    },
+    {
+      "nome": "Paulo Souza",
+      "email": "paulo.csouzas@outlook.com",
+      "senha": "P@ul0souza",
+      "sexo": "Masculino",
+      "dtnascimento": "1994-01-17",
+      "cpf": "429.433.718-40",
+      "cep": "",
+      "bairro": "",
+      "numero": "",
+      "cidade": "",
+      "uf": "",
+      "endereço": "",
+      "complemento": "",
+      "id": 3
+    }
+  ],
+  "publicacoes": [
+    {
+      "id": 1,
+      "nome": "Paulo Souza",
+      "foto": "https://img.freepik.com/fotos-gratis/retrato-de-menino-branco-com-corte-de-cabelo-estiloso_74855-10319.jpg",
+      "dtcadastro": "2025-08-28 18:00:00",
+      "imagem": "https://www.enago.com.br/academy/wp-content/uploads/sites/17/2016/01/pexels-photo-1851446-1.jpeg",
+      "url": "https://www.youtube.com/watch?v=Fhy-5CtVkiM",
+      "texto": "Olha só que aula incrível que acabei de assistir de HTML!",
+      "curtidas": true
+    },
+    {
+      "id": 1,
+      "nome": "Paulo Souza",
+      "foto": "https://img.freepik.com/fotos-gratis/retrato-de-menino-branco-com-corte-de-cabelo-estiloso_74855-10319.jpg",
+      "dtcadastro": "2025-08-28 18:00:00",
+      "imagem": "https://invexo.com.br/blog/wp-content/uploads/2020/06/5-praias-da-zona-sul-para-ir.jpg",
+      "url": "",
+      "texto": "Esse final de semana eu quero curtir muito uma praia.",
+      "curtidas": false
     }
   ]
 }
