@@ -23,15 +23,73 @@ document.addEventListener("DOMContentLoaded", function () {
     method: "GET",
   };
 
+  const caixaPublicacoes = document.getElementById("publicacoes");
+
   fetch("http://localhost:3000/publicacoes", requestOptions)
     .then((response) => response.json())
     .then((result) => {
-      document.querySelector(".imgPerfilPub").src = result[0].foto;
-      document.querySelector(".nomePerfilPub").innerText = result[0].nome;
-      document.querySelector(".dataPerfilPub").innerText = result[0].dtcadastro;
-      document.querySelector(".imgPub").src = result[0].imagem;
-      document.querySelector(".textoPub").innerText = result[0].texto;
-      document.querySelector(".urlPub").href = result[0].url;
+      caixaPublicacoes.innerHTML = "";
+      let conteudo = "";
+
+      result.forEach((pub) => {
+        conteudo = `
+          <div class="publicacao">
+            <div class="pubHeader">
+              <div>
+                <img src="${pub.foto}" alt="Foto Perfil do ${
+          pub.nome
+        }" class="imgPerfilPub" />
+              </div>
+              <div>
+                <h3 class="nomePerfilPub">${pub.nome}</h3>
+                <h3 class="dataPerfilPub">${pub.dtcadastro}</h3>
+              </div>
+            </div>
+            <div class="pubBody">
+              <div class="boxTextoPub">
+                <h3 class="textoPub">${pub.texto}</h3>
+              </div>
+              <a href="${pub.url || "#"}" target="_blank" class="urlPub">
+                <img src="${pub.imagem || ""}" alt="" class="imgPub" />
+              </a>
+            </div>
+            <div class="pubFooter">
+              <img src="./public/images/favorite.png" alt="Curtir" />
+              Curtir
+            </div>
+          </div>
+        `;
+
+        caixaPublicacoes.insertAdjacentHTML("beforeEnd", conteudo);
+      });
+    })
+    .catch((error) => console.error(error));
+
+  // GET AMIGOS
+
+  const caixaAmigos = document.getElementById("amigos");
+
+  fetch("http://localhost:3000/amigos", requestOptions)
+    .then((response) => response.json())
+    .then((result) => {
+      caixaAmigos.innerHTML = "";
+      let conteudo = "";
+
+      result.forEach((amg) => {
+        conteudo = `
+          <div class="amigo">
+            <div class="boxImagemAmigo">
+              <img src="${amg.foto}" alt="Foto da ${amg.nome}" />
+            </div>
+            <div class="boxInfoAmigo">
+              <p>${amg.nome}</p>
+              <p>${amg.email}</p>
+            </div>
+          </div>
+        `;
+
+        caixaAmigos.insertAdjacentHTML("beforeEnd", conteudo);
+      });
     })
     .catch((error) => console.error(error));
 });

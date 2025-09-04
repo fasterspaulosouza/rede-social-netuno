@@ -260,5 +260,31 @@ h3.textoPub {
   width: 303px;
   min-height: 100vh;
 
-  background-color: blueviolet;
+  padding: 16px;
+  /* background-color: blueviolet; */
+}
+
+#amigos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  border: 2px solid #d0d5dd;
+  gap: 16px;
+  padding: 16px 8px;
+}
+
+.amigo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.boxImagemAmigo img {
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }

@@ -43,7 +43,7 @@
       "curtidas": true
     },
     {
-      "id": 1,
+      "id": 2,
       "nome": "Paulo Souza",
       "foto": "https://img.freepik.com/fotos-gratis/retrato-de-menino-branco-com-corte-de-cabelo-estiloso_74855-10319.jpg",
       "dtcadastro": "2025-08-28 18:00:00",
@@ -51,6 +51,58 @@
       "url": "",
       "texto": "Esse final de semana eu quero curtir muito uma praia.",
       "curtidas": false
+    },
+    {
+      "id": 2,
+      "nome": "Paulo Souza",
+      "foto": "https://img.freepik.com/fotos-gratis/retrato-de-menino-branco-com-corte-de-cabelo-estiloso_74855-10319.jpg",
+      "dtcadastro": "2025-08-28 18:00:00",
+      "imagem": "https://code.visualstudio.com/assets/home/swimlane-nes-dark.webp",
+      "url": "https://www.youtube.com/watch?v=pkH6XxH57O8",
+      "texto": "Eu usava o bloco de notas para programar, mas agora eu só uso o VSCode!",
+      "curtidas": false
+    },
+    {
+      "id": 4,
+      "nome": "Paulo Souza",
+      "foto": "https://img.freepik.com/fotos-gratis/retrato-de-menino-branco-com-corte-de-cabelo-estiloso_74855-10319.jpg",
+      "dtcadastro": "2025-08-28 18:00:00",
+      "imagem": "https://mosten.com/wp-content/uploads/2021/10/postman-platform-for-api-development-social-card.jpg",
+      "url": "",
+      "texto": "Teste Publicacao via Postman",
+      "curtidas": false
+    }
+  ],
+  "amigos": [
+    {
+      "nome": "Larissa Emily",
+      "email": "Larissa@gmail.com",
+      "foto": "https://i.pinimg.com/736x/17/73/86/177386353024071c78b9e3b576cfeda5.jpg",
+      "id": 1
+    },
+    {
+      "nome": "Paula Ketlem",
+      "email": "Paula@gmail.com",
+      "foto": "https://cdn.pixabay.com/photo/2019/03/12/12/19/brazil-4050650_1280.jpg",
+      "id": 2
+    },
+    {
+      "nome": "Rodrigo Milani",
+      "email": "Rodrigo@gmail.com",
+      "foto": "https://i.pinimg.com/736x/b4/e5/85/b4e585d6ef20fb28ec9c0f858e43a559.jpg",
+      "id": 3
+    },
+    {
+      "nome": "José Henrique",
+      "email": "José@gmail.com",
+      "foto": "https://img.freepik.com/fotos-gratis/homem-bonito-posando-e-sorrindo_23-2149396133.jpg",
+      "id": 4
+    },
+    {
+      "nome": "Joana Izabel",
+      "email": "joana@gmail.com",
+      "foto": "https://thumbs.dreamstime.com/b/mulher-morena-descascada-com-o-cabelo-fraco-efervescente-que-toma-imagem-um-sorriso-bonito-dos-soltos-escuros-morenos-cabelos-do-143938844.jpg",
+      "id": 5
     }
   ]
 }
