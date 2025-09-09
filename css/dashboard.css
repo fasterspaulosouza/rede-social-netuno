@@ -106,6 +106,7 @@ body {
   min-height: 200vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   padding: 32px;
 
@@ -167,6 +168,63 @@ body {
   background-color: #fff;
   color: #000;
   padding: 8px 14px;
+  cursor: pointer;
+}
+
+#BoxPublicar {
+  width: 707px;
+  min-height: 130px;
+
+  border-radius: 20px;
+  border: 2px solid #d0d5dd;
+  margin: 32px auto;
+  padding: 16px;
+}
+
+#BoxInputsPublicar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#BoxInputsPublicar input {
+  display: flex;
+  padding: 10px 14px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+  background: #fff;
+  box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+}
+
+#boxBtnPublicar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px 0;
+}
+
+#btnPublicar {
+  display: flex;
+  width: 106px;
+  padding: 8px 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+  background: #101828;
+  box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+
+  color: #fff;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+
   cursor: pointer;
 }
 
@@ -259,9 +317,19 @@ h3.textoPub {
 #boxRight {
   width: 303px;
   min-height: 100vh;
+  padding: 32px;
 
-  padding: 16px;
-  /* background-color: blueviolet; */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#boxRight p#friends {
+  color: #101828;
+  font-family: "Lexend Deca";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
 }
 
 #amigos {
@@ -270,15 +338,34 @@ h3.textoPub {
   align-items: center;
   border-radius: 20px;
   border: 2px solid #d0d5dd;
-  gap: 16px;
-  padding: 16px 8px;
+  padding: 0 24px;
 }
 
 .amigo {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 16px;
+
+  padding: 16px 0;
+
+  border-bottom: 1px solid #d0d5dd;
+}
+
+.nomeAmigo {
+  color: #101828;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.emailAmigo {
+  color: #667085;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .boxImagemAmigo img {
@@ -287,4 +374,55 @@ h3.textoPub {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+}
+
+#aniversariante {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 20px;
+  border: 2px solid #d0d5dd;
+}
+
+#aniversariante h1 {
+  color: #101828;
+  font-family: "Lexend Deca";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+#aniversariante p {
+  color: #475467;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+#aniversariante span {
+  font-weight: 700;
+}
+
+#aniversariante a {
+  text-align: left;
+
+  color: #101828;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#boxButton {
+  padding: 16px;
+}
+
+#boxAniver {
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }

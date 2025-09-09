@@ -14,6 +14,7 @@
   </head>
   <body>
     <div id="mainBoxDashboard">
+      <!-- MENU -->
       <div id="boxLeft">
         <div id="boxMenu">
           <img
@@ -50,6 +51,7 @@
           </div>
         </div>
       </div>
+      <!-- CENTRAL -->
       <div id="boxCentral">
         <div id="headerApp">
           <img src="./public/images/logo-netuno2.png" alt="" />
@@ -68,6 +70,16 @@
             <button id="btnEditarPerfil">Editar perfil</button>
           </div>
         </div>
+        <div id="BoxPublicar">
+          <div id="BoxInputsPublicar">
+            <input type="text" id="ImgPub" placeholder="url da imagem" />
+            <input type="text" id="urlPub" placeholder="url da publicação" />
+            <input type="text" id="txtPub" placeholder="texto da publicação" />
+          </div>
+          <div id="boxBtnPublicar">
+            <button id="btnPublicar">Publicar</button>
+          </div>
+        </div>
         <div id="corpoApp">
           <div>
             <p>Atividades</p>
@@ -75,9 +87,24 @@
           <div id="publicacoes"></div>
         </div>
       </div>
+      <!-- AMIGOS / ANIVERSÁRIOS -->
       <div id="boxRight">
-        <h1>Amigos</h1>
+        <p id="friends">Amigos</p>
         <div id="amigos"></div>
+        <div id="aniversariante">
+          <div id="boxAniver">
+            <img src="./public/images/aniversariante.png" alt="" />
+            <h1>Aniversariante do mês</h1>
+            <p>
+              <span>Larissa Emily</span> está fazendo aniversário hoje, envie um
+              presente para ela!
+            </p>
+          </div>
+          <hr />
+          <div id="boxButton">
+            <a href="#">Enviar presente</a>
+          </div>
+        </div>
       </div>
     </div>
     <script src="./js/user.js"></script>

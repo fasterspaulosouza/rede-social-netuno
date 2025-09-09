@@ -82,8 +82,8 @@ document.addEventListener("DOMContentLoaded", function () {
               <img src="${amg.foto}" alt="Foto da ${amg.nome}" />
             </div>
             <div class="boxInfoAmigo">
-              <p>${amg.nome}</p>
-              <p>${amg.email}</p>
+              <p class="nomeAmigo">${amg.nome}</p>
+              <p class="emailAmigo">${amg.email}</p>
             </div>
           </div>
         `;
@@ -92,4 +92,63 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     })
     .catch((error) => console.error(error));
+
+  const buttonPublicacao = document.getElementById("btnPublicar");
+
+  buttonPublicacao.addEventListener("click", () => {
+    const ImgPub = document.querySelector("#ImgPub").value;
+    const urlPub = document.querySelector("#urlPub").value;
+    const txtPub = document.querySelector("#txtPub").value;
+
+    const dados = JSON.stringify({
+      nome: "Paulo Souza",
+      foto: "https://img.freepik.com/fotos-gratis/retrato-de-menino-branco-com-corte-de-cabelo-estiloso_74855-10319.jpg",
+      dtcadastro: getFormattedDate(),
+      imagem: ImgPub,
+      url: urlPub,
+      texto: txtPub,
+      curtidas: true,
+    });
+
+    cadastrarPublicacao(dados);
+  });
+
+  async function cadastrarPublicacao(dados) {
+    try {
+      let myHeaders = new Headers();
+      myHeaders.append("Content-Type", "application/json");
+
+      const requestOptions = {
+        method: "POST",
+        headers: myHeaders,
+        body: dados,
+        redirect: "follow",
+      };
+
+      const resposta = await fetch(
+        "http://localhost:3000/publicacoes",
+        requestOptions
+      )
+        .then((response) => response.text())
+        .then((result) => console.log(result))
+        .catch((error) => console.log("error", error));
+
+      console.log(resposta);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  function getFormattedDate() {
+    const now = new Date();
+
+    const year = now.getFullYear();
+    const month = String(now.getMonth() + 1).padStart(2, "0");
+    const day = String(now.getDate()).padStart(2, "0");
+    const hours = String(now.getHours()).padStart(2, "0");
+    const minutes = String(now.getMinutes()).padStart(2, "0");
+    const seconds = String(now.getSeconds()).padStart(2, "0");
+
+    return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+  }
 });
