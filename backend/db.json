@@ -33,44 +33,14 @@
   ],
   "publicacoes": [
     {
-      "id": 1,
       "nome": "Paulo Souza",
       "foto": "https://img.freepik.com/fotos-gratis/retrato-de-menino-branco-com-corte-de-cabelo-estiloso_74855-10319.jpg",
-      "dtcadastro": "2025-08-28 18:00:00",
-      "imagem": "https://www.enago.com.br/academy/wp-content/uploads/sites/17/2016/01/pexels-photo-1851446-1.jpeg",
-      "url": "https://www.youtube.com/watch?v=Fhy-5CtVkiM",
-      "texto": "Olha só que aula incrível que acabei de assistir de HTML!",
-      "curtidas": true
-    },
-    {
-      "id": 2,
-      "nome": "Paulo Souza",
-      "foto": "https://img.freepik.com/fotos-gratis/retrato-de-menino-branco-com-corte-de-cabelo-estiloso_74855-10319.jpg",
-      "dtcadastro": "2025-08-28 18:00:00",
-      "imagem": "https://invexo.com.br/blog/wp-content/uploads/2020/06/5-praias-da-zona-sul-para-ir.jpg",
-      "url": "",
-      "texto": "Esse final de semana eu quero curtir muito uma praia.",
-      "curtidas": false
-    },
-    {
-      "id": 2,
-      "nome": "Paulo Souza",
-      "foto": "https://img.freepik.com/fotos-gratis/retrato-de-menino-branco-com-corte-de-cabelo-estiloso_74855-10319.jpg",
-      "dtcadastro": "2025-08-28 18:00:00",
-      "imagem": "https://code.visualstudio.com/assets/home/swimlane-nes-dark.webp",
-      "url": "https://www.youtube.com/watch?v=pkH6XxH57O8",
-      "texto": "Eu usava o bloco de notas para programar, mas agora eu só uso o VSCode!",
-      "curtidas": false
-    },
-    {
-      "id": 4,
-      "nome": "Paulo Souza",
-      "foto": "https://img.freepik.com/fotos-gratis/retrato-de-menino-branco-com-corte-de-cabelo-estiloso_74855-10319.jpg",
-      "dtcadastro": "2025-08-28 18:00:00",
-      "imagem": "https://mosten.com/wp-content/uploads/2021/10/postman-platform-for-api-development-social-card.jpg",
-      "url": "",
-      "texto": "Teste Publicacao via Postman",
-      "curtidas": false
+      "dtcadastro": "2025-09-09 19:08:27",
+      "imagem": "https://conceito.de/wp-content/uploads/2013/05/developer-gf942664bb_1280.jpg",
+      "url": "https://www.alura.com.br/artigos/javascript?srsltid=AfmBOoovQDyQzUJlBo_KWuVsHF-NJN6Sm7d7Ni2FwCDDK1LXUfpwWXov",
+      "texto": "Olha só que interessante esse artigo da Alura, aprendi muito sobre JS com ele...",
+      "curtidas": true,
+      "id": 1
     }
   ],
   "amigos": [
