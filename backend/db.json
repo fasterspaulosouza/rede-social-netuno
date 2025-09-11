@@ -41,6 +41,16 @@
       "texto": "Olha só que interessante esse artigo da Alura, aprendi muito sobre JS com ele...",
       "curtidas": true,
       "id": 1
+    },
+    {
+      "nome": "Paulo Souza",
+      "foto": "https://img.freepik.com/fotos-gratis/retrato-de-menino-branco-com-corte-de-cabelo-estiloso_74855-10319.jpg",
+      "dtcadastro": "2025-09-11 18:09:04",
+      "imagem": "https://nocodestartup.io/wp-content/uploads/2023/02/m5vfdvmmdxg.jpg",
+      "url": "https://nocodestartup.io/bubble/",
+      "texto": "Hoje eu iniciei meu curso de Bubble na plataforma NoCodeStartUp",
+      "curtidas": true,
+      "id": 2
     }
   ],
   "amigos": [
