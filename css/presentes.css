@@ -157,6 +157,29 @@ body {
   line-height: 24px; /* 150% */
 }
 
+#corpoApp {
+  width: 707px;
+  margin-top: 32px;
+}
+
+#corpoApp h1 {
+  color: #101828;
+  font-family: "Lexend Deca";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 35px; /* 140% */
+  letter-spacing: -0.71px;
+  text-align: left;
+}
+
+#produtos {
+  width: 700px;
+  min-height: 400px;
+  border-radius: 20px;
+  border: 2px solid #d0d5dd;
+}
+
 /* PAGINA DIREITA */
 
 #boxRight {

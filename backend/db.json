@@ -84,5 +84,14 @@
       "foto": "https://thumbs.dreamstime.com/b/mulher-morena-descascada-com-o-cabelo-fraco-efervescente-que-toma-imagem-um-sorriso-bonito-dos-soltos-escuros-morenos-cabelos-do-143938844.jpg",
       "id": 5
     }
+  ],
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "PlayStation 1",
+      "descricao": "",
+      "valor": 200.0,
+      "foto": "https://upload.wikimedia.org/wikipedia/commons/9/95/PSX-Console-wController.png"
+    }
   ]
 }

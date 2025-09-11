@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
   // Convertendo de volta para objeto
   const usuarioObj = JSON.parse(usuarioSalvo);
 
+  console.log(usuarioObj);
+
   // Loggoff
   const btnSair = document.querySelector("#btnSair");
   btnSair.addEventListener("click", () => {
