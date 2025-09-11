@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
+    <title>Presentes</title>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lexend+Deca:wght@400;700&display=swap"
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./css/dashboard.css" />
+    <link rel="stylesheet" href="./css/presentes.css" />
   </head>
   <body>
     <div id="mainBoxDashboard">
@@ -23,7 +23,7 @@
             alt="Logo"
           />
           <div id="listaMenu">
-            <div class="menu active">
+            <div class="menu">
               <a href="dashboard.html"
                 ><img src="./public/images/inicio.png" alt="" /> Início</a
               >
@@ -33,7 +33,7 @@
                 ><img src="./public/images/amigos.png" alt="" /> Amigos</a
               >
             </div>
-            <div class="menu">
+            <div class="menu active">
               <a href="presentes.html"
                 ><img src="./public/images/presentes.png" alt="" /> Presentes</a
               >
@@ -54,37 +54,13 @@
       <!-- CENTRAL -->
       <div id="boxCentral">
         <div id="headerApp">
-          <img src="./public/images/logo-netuno2.png" alt="" />
-        </div>
-        <div id="subHeaderApp">
-          <div id="boxSubHeaderUsuario">
-            <div>
-              <img src="#" alt="" id="imagemPerfil" />
-            </div>
-            <div>
-              <p id="nomePerfil">Nome do usuário</p>
-              <p id="emailPerfil">E-mail do usuário</p>
-            </div>
+          <div id="boxGiftTexto">
+            <h1>Troque presente com seus amigos!</h1>
+            <p>Envie presentes para as pessoas que você mais gosta.</p>
           </div>
-          <div>
-            <button id="btnEditarPerfil">Editar perfil</button>
+          <div id="boxGiftImagem">
+            <img src="./public/images/gift.png" alt="" />
           </div>
-        </div>
-        <div id="BoxPublicar">
-          <div id="BoxInputsPublicar">
-            <input type="text" id="ImgPub" placeholder="url da imagem" />
-            <input type="text" id="urlPub" placeholder="url da publicação" />
-            <input type="text" id="txtPub" placeholder="texto da publicação" />
-          </div>
-          <div id="boxBtnPublicar">
-            <button id="btnPublicar">Publicar</button>
-          </div>
-        </div>
-        <div id="corpoApp">
-          <div>
-            <p>Atividades</p>
-          </div>
-          <div id="publicacoes"></div>
         </div>
       </div>
       <!-- AMIGOS / ANIVERSÁRIOS -->
@@ -107,6 +83,6 @@
         </div>
       </div>
     </div>
-    <script src="./js/user.js"></script>
+    <script src="./js/presentes.js"></script>
   </body>
 </html>
