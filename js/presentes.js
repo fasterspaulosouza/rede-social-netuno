@@ -45,4 +45,40 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     })
     .catch((error) => console.error(error));
+
+  // GET PRODUTOS
+  const caixaProdutos = document.getElementById("produtos");
+
+  fetch("http://localhost:3000/produtos", requestOptions)
+    .then((response) => response.json())
+    .then((result) => {
+      caixaProdutos.innerHTML = "";
+      let conteudo = "";
+
+      result.forEach((prod) => {
+        console.log(prod);
+        conteudo = `
+          <div class="produto">
+            <div class="boxImageProduto">
+              <img
+                src="${prod.foto}"
+                alt="${prod.nome}"
+              />
+            </div>
+            <div class="boxTextoProduto">
+              <h2>${prod.nome}</h2>
+              <span>${prod.valor} pontos</span>
+            </div>
+            <div>
+              <button class="ButtonProduto ${
+                !prod.status ? "ButtonProdutoNaoDisponivel" : ""
+              }">Resgatar</button>
+            </div>
+          </div>
+        `;
+
+        caixaProdutos.insertAdjacentHTML("beforeEnd", conteudo);
+      });
+    })
+    .catch((error) => console.error(error));
 });
